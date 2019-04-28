@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<suite name="Test_1">
+    <parameter name="driverPath" value="src\\main\\resources\\Chromedriver.exe"/>
+    <parameter name="url" value="https://www.pocztowy24.pl/demo/"/>
+
+
+    <test name="Wykonaj transakcję">
+
+        <classes>
+            <class name="pl.pocztowy24.config.ConfigTest">
+                <methods>
+                    <include name="setUp"/>
+                    <include name="openSite"/>
+                </methods>
+            </class>
+            <class name="pl.pocztowy24.pages.loginPage.LoginTest">
+                <methods>
+                    <include name="clickOnLoginButton"/>
+                </methods>
+            </class>
+
+
+        </classes>
+    </test>
+
+    <test name="zamkniecie web drivera">
+        <classes>
+            <class name="pl.pocztowy24.config.ConfigTest">
+                <methods>
+                    <include name="tearUp"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
