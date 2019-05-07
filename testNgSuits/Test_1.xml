@@ -5,6 +5,14 @@
     <parameter name="url" value="https://www.pocztowy24.pl/demo/"/>
 
 
+    <parameter name="number" value="48 1010 1010 0071 1322 3100 0034"/>
+    <parameter name="name" value=" Młody Spajki "/>
+    <parameter name="titlePayment" value="Na zabawki"/>
+    <parameter name="amountPayment" value="300"/>
+    <parameter name="day" value="2019-05-07"/>
+
+
+
     <test name="Wykonaj transakcję">
 
         <classes>
@@ -19,7 +27,11 @@
                     <include name="clickOnLoginButton"/>
                 </methods>
             </class>
-
+            <class name="pl.pocztowy24.pages.transferOperation.TransferTest">
+                <methods>
+                    <include name="transferFormTest"/>
+                </methods>
+            </class>
 
         </classes>
     </test>

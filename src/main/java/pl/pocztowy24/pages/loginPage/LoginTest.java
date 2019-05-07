@@ -1,6 +1,7 @@
 package pl.pocztowy24.pages.loginPage;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pl.pocztowy24.config.SingletonWebDriver;
@@ -22,4 +23,5 @@ public class LoginTest {
         String a = SingletonWebDriver.getWebDriver().getCurrentUrl();
         Assert.assertEquals(url, SingletonWebDriver.getWebDriver().getCurrentUrl());
     }
+
 }
