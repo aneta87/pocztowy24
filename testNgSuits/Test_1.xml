@@ -10,6 +10,7 @@
     <parameter name="titlePayment" value="Na zabawki"/>
     <parameter name="amountPayment" value="300"/>
     <parameter name="day" value="2019-05-07"/>
+    <parameter name="number" value="88888888"/>
 
 
 
@@ -32,7 +33,11 @@
                     <include name="transferFormTest"/>
                 </methods>
             </class>
-
+            <class name="pl.pocztowy24.pages.transferCorfirmation.ConfirmatonTest">
+            <methods>
+                <include name="configurationForm"/>
+            </methods>
+        </class>
         </classes>
     </test>
 
